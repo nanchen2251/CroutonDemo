@@ -21,10 +21,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void topBtnClick(View view) {
-        Crouton.makeText(this,"显示顶部对话框", Style.ALERT).show();
+        Crouton.makeText(this,"显示顶部对话框", Style.INFO).show();
     }
 
     public void otherBtnClick(View view) {
         Crouton.makeText(this,"显示顶部对话框", Style.ALERT,layout).show();
+    }
+
+    /**
+     * 显示自定义的提示框
+     */
+    public void myBtnClick(View view) {
+        View v = getLayoutInflater().inflate(R.layout.other_layout,null);
+        Crouton.make(this,v).show();
     }
 }

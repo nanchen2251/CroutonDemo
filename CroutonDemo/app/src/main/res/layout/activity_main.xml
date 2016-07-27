@@ -20,6 +20,12 @@
         android:onClick="otherBtnClick"
         android:text="显示其他位置的提示框"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="myBtnClick"
+        android:text="显示自定义的提示框"/>
+
     <LinearLayout
         android:layout_marginTop="100dp"
         android:id="@+id/main_ll"
